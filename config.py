@@ -5,4 +5,4 @@ def generate_dm_text(name):
 
 scheduler_time = 15 #in minutes
 
-tw_username = "paraazz" #change this to yours
+tw_username = "ian_absher" #change this to yours
