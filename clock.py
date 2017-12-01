@@ -3,6 +3,7 @@ from twautomate import get_new_followers
 from twautomate import get_old_followers
 from twautomate import send_direct_message
 from twautomate import save_followers
+from twautomate import seed_db
 from config import tw_username
 from config import scheduler_time
 from apscheduler.schedulers.blocking import BlockingScheduler
@@ -17,7 +18,7 @@ if __name__ == "__main__":
 
         save_followers(tw_username, new)
 
-        for n in new_followers:
+        for n in new:
             print("message sent to {}".format(n))
             send_direct_message(n)
         print("Task Complete")
