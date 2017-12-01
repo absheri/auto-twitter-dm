@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
         save_followers(tw_username, new)
 
-        for n in new:
+        for n in new_followers:
             print("message sent to {}".format(n))
             send_direct_message(n)
         print("Task Complete")
