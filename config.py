@@ -1,3 +1,5 @@
+import os
+
 # configure the dm text
 def generate_dm_text(name):
 	return '''Hey {}, It great to connect
@@ -5,4 +7,4 @@ def generate_dm_text(name):
 
 scheduler_time = 15 #in minutes
 
-tw_username = "ian_absher" #change this to yours
+tw_username = os.environ['TW_ACCOUNT']
